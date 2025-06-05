@@ -500,11 +500,11 @@ class GLViewer:
         # First create top and bottom full edges
 	    self.BBox_edges.add_full_edges(_bbox, _bbox_clr)
 	    # Add faded vertical edges
-	    self.BBox_edges.add_vertical_edges(_bbox, _bbox_clr)
+        self.BBox_edges.add_vertical_edges(_bbox, _bbox_clr)
 	    # Add faces
-	    self.BBox_faces.add_vertical_faces(_bbox, _bbox_clr)
+        self.BBox_faces.add_vertical_faces(_bbox, _bbox_clr)
 	    # Add top face
-	    self.BBox_faces.add_top_face(_bbox, _bbox_clr)
+        self.BBox_faces.add_top_face(_bbox, _bbox_clr)
 
     def idle(self):
         if self.available:
